@@ -7,7 +7,7 @@ import LinkButton from '../components/LinkButton.vue'
 
 
 const links = [
-  { label: 'Portfolio', url: 'https://example.com', icon: 'mdi-web' },
+  { label: 'Portfolio', url: 'https://jessvu-designs.vercel.app/', icon: 'mdi-web' },
   { label: 'LinkedIn', url: 'https://www.linkedin.com/', icon: 'mdi-linkedin' },
   { label: 'Email', url: 'mailto:hello@example.com', icon: 'mdi-email' },
 ]
