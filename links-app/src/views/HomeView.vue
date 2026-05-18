@@ -38,13 +38,13 @@ const links = [
                   <span class="text-h4 font-weight-bold">JV</span>
                 </v-avatar>
                 <h1 class="text-h5 font-weight-bold mb-1">Jess Vu</h1>
-                <p class="mb-4">Builder of things on the web ✨</p>
+
+                <p class="mb-6" style="margin-bottom: 48px;">Builder of things on the web ✨</p>
 
 
 
-                <v-divider class="my-4" />
 
-                <nav aria-label="Profile links">
+                <nav aria-label="Profile links" style="display: flex; flex-direction: column; gap: 16px;">
                   <LinkButton
                     v-for="link in links"
                     :key="link.label"
