@@ -14,9 +14,7 @@ export const vuetify = createVuetify({
     aliases,
     sets: { mdi },
   },
-  theme: {
-    defaultTheme: 'light',
-  },
+  // Theme switching removed; using default Vuetify theme
 })
 
 export default vuetify

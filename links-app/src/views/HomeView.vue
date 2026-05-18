@@ -1,22 +1,12 @@
 
 <script setup lang="ts">
-import { ref, computed } from 'vue'
-import { useTheme } from 'vuetify'
-
 import LinkButton from '../components/LinkButton.vue'
-
 
 const links = [
   { label: 'Portfolio', url: 'https://jessvu-designs.vercel.app/', icon: 'mdi-web' },
   { label: 'LinkedIn', url: 'https://www.linkedin.com/', icon: 'mdi-linkedin' },
   { label: 'Email', url: 'mailto:hello@example.com', icon: 'mdi-email' },
 ]
-
-const theme = useTheme()
-const isDark = computed(() => theme.global.current.value.dark)
-function toggleTheme() {
-  theme.global.name.value = isDark.value ? 'light' : 'dark'
-}
 </script>
 
 <template>
@@ -50,17 +40,7 @@ function toggleTheme() {
                 <h1 class="text-h5 font-weight-bold mb-1">Jess Vu</h1>
                 <p class="mb-4">Builder of things on the web ✨</p>
 
-                <v-btn
-                  class="mb-2"
-                  :icon="isDark ? 'mdi-weather-sunny' : 'mdi-weather-night'"
-                  variant="text"
-                  @click="toggleTheme"
-                  color="primary"
-                  aria-label="Toggle dark/light theme"
-                >
-                  <v-icon>{{ isDark ? 'mdi-weather-sunny' : 'mdi-weather-night' }}</v-icon>
-                  <span class="ms-2">{{ isDark ? 'Light' : 'Dark' }} Mode</span>
-                </v-btn>
+
 
                 <v-divider class="my-4" />
 
