@@ -16,8 +16,6 @@
 </template>
 
 <script setup lang="ts">
-import { defineProps } from 'vue'
-
 defineProps<{
   label: string
   url: string
