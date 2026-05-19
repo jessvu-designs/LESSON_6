@@ -30,7 +30,7 @@ const links = [
                     borderRadius: '32px',
                     backdropFilter: 'blur(10px)',
                     WebkitBackdropFilter: 'blur(10px)',
-                    boxShadow: '0 2px 12px 0 rgba(0,0,0,0.03)'
+                    boxShadow: '0 1px 6px 0 rgba(0,0,0,0.015)'
                   }"
                 >
                 <!-- wavy-card style moved to <style> block below -->
