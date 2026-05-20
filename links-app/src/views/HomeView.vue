@@ -46,7 +46,7 @@ const links = [
                 <LinkButton
                   v-if="!link.iconOnly"
                   :label="link.label"
-                  :url="link.url"
+                  :url="link.url ?? ''"
                   :icon="link.icon"
                   :iconOnly="link.iconOnly"
                 />
@@ -57,7 +57,7 @@ const links = [
                   <LinkButton
                     v-if="link.iconOnly"
                     :label="link.label"
-                    :url="link.url"
+                    :url="link.url ?? ''"
                     :icon="link.icon"
                     :iconOnly="link.iconOnly"
                   />
